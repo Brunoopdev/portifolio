@@ -1,0 +1,220 @@
+@use 'variables';
+
+.about{
+
+    &__container{
+        padding-top: 100px;
+        margin-top: 300px;
+
+        &__text{
+            color: variables.$textColor;
+
+            &__title{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 42px;
+                color: variables.$titleColor;
+            }
+
+            &__paragraph{
+                width: 700px;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 70px;
+                line-height: 25px;
+                font-size: 26px;
+            }
+        }
+
+        &__languages{
+            color: variables.$textColor;
+            width: 500px;
+            margin: 0 auto;
+
+            &__list{
+                list-style:none;
+
+                &__item{
+                    margin-bottom: 14px;
+
+                    .back-line{
+                        display: block;
+                        width: 500px;
+                        height: 10px;
+                        background-color: variables.$textColor;
+                        margin: 0 auto;
+                    }
+
+                    .front-line{
+
+                        &__frontDevelopment{
+                            display: block;
+                            width: 400px;
+                            height: 10px;
+                            background-color: variables.$secondaryColor;
+                        }
+
+                        &__frontPrograming{
+                            display: block;
+                            width: 250px;
+                            height: 10px;
+                            background-color: variables.$secondaryColor;
+                        }
+
+                        &__backEnd{
+                            display: block;
+                            width: 150px;
+                            height: 10px;
+                            background-color: variables.$secondaryColor;
+                        }
+
+                        &__dataBank{
+                            display: block;
+                            width: 150px;
+                            height: 10px;
+                            background-color: variables.$secondaryColor;
+                        }
+                    }
+
+                    &__title{
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        &__contact{
+            margin-top: 60px;
+            margin-bottom: 90px;
+            text-align: center;
+
+            &__list{
+                display:flex;
+                list-style: none;
+                width: 400px;
+                margin: 0 auto;
+                justify-content: space-between;
+                margin-top: 90px;
+
+                &__item{
+                    
+                    &__icon{
+                        height: 60px;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:480px) {
+            padding-top: 100px;
+            margin-top: 100px;
+
+            &__text{
+                color: variables.$textColor;
+                font-weight: bold;
+
+                &__title{
+                    text-align: center;
+                    margin-bottom: 20px;
+                    font-size: 26px;
+                }
+
+                &__paragraph{
+                    width: 280px;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 32px;
+                    line-height: 20px;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+            }
+
+            &__languages{
+                color: variables.$textColor;
+                width: 250px;
+                margin: 0 auto;
+
+                &__list{
+                    list-style:none;
+
+                    &__item{
+                        margin-bottom: 14px;
+
+                        .back-line{
+                            display: block;
+                            width: 250px;
+                            height: 5px;
+                            background-color: variables.$textColor;
+                        }
+
+                        .front-line{
+                            &__frontDevelopment{
+                                display: block;
+                                width: 200px;
+                                height: 5px;
+                                background-color: variables.$secondaryColor;
+                            }
+
+                            &__frontPrograming{
+                                display: block;
+                                width: 125px;
+                                height: 5px;
+                                background-color: variables.$secondaryColor;
+                            }
+
+                            &__backEnd{
+                                display: block;
+                                width: 50px;
+                                height: 5px;
+                                background-color: variables.$secondaryColor;
+                            }
+
+                            &__dataBank{
+                                display: block;
+                                width: 50px;
+                                height: 5px;
+                                background-color: variables.$secondaryColor;
+                            }
+                        }
+
+                        &__title{
+                            margin-bottom: 2px;
+                        }
+                    }
+
+                }
+            }
+
+            &__contact{
+                margin-top: 60px;
+                margin-bottom: 90px;
+                text-align: center;
+
+                &__list{
+                    display:flex;
+                    list-style: none;
+                    width: 250px;
+                    margin: 0 auto;
+                    justify-content: space-around;  
+
+                    &__item{
+
+                        &__icon{
+                            height: 40px;
+
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

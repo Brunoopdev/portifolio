@@ -1,0 +1,19 @@
+@use 'variables';
+
+.footer{
+    text-align: center;
+
+    &__container{
+        font-size: 14px;
+        color: variables.$copyTextColor;
+    }
+
+    @media (max-width:480px) {
+        text-align: center;
+
+        &__container{
+            font-size: 10px;
+            color: variables.$copyTextColor;
+        }
+    }
+}

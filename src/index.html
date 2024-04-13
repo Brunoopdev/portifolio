@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio New</title>
+    <link rel="shortcut icon" href="/images/fav-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/stylesSass/main.scss">
+</head>
+<body>
+
+    <!-- header no padrão BEM -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li id="homeLi" class="header__nav__list__item"><a class="li" href="#">Home</a></li>
+                    <li id="projectsLi" class="header__nav__list__item"><a class="liMiddle li" href="#projects">Projetos</a></li>
+                    <li id="aboutLi" class="header__nav__list__item"><a class="li" href="#about">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- home no padrão BEM -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home__container">
+                <div class="home__container__text">
+                    <h1 class="home__container__text__title">Software developer</h1>
+                    <p class="home__container__text__paragraph">    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, quibusdam numquam? Hic porro debitis reiciendis harum velit sed maiores doloribus! Eos perspiciatis, labore corrupti neque vel animi modi earum cupiditate?</p>
+                </div>
+                <div class="home__container__video">
+                    <video class="home__container__video__play" src="/video/2887463-hd_1920_1080_25fps.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="home__language">
+                <span class="home__language__label">Idiomas</span>
+            <select class="home__language__options">
+                <option class="home__language__options__option" value="portugues">Português</option>
+                <option class="home__language__option__option" value="english">English</option>
+            </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects no padrão BEM -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects__container">
+                <div class="projects__container__text">
+                    <h2 class="projects__container__text__title">Projetos</h2>
+                    <p class="projects__container__text__paragraph">Here are some of my projects, you also can find them on my <a href="https://github.com/Brunoopdev" class="github__link"><b class="github__text">GitHub</b></a>!</p>
+                </div>
+                <div class="projects__container__apresentation">
+                    <div class="projects__container__apresentation__project">
+                        <h3 class="projects__container__apresentation__project__title">PROJETO</h3>
+                        <a href="#"><img src="https://via.placeholder.com/200x200" alt=""></a>
+                        <p class="projects__container__apresentation__project__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum tempora vitae officiis accusamus minus perspiciatis quia dolore neque, adipisci accusantium debitis placeat? Maiores nam placeat aut nobis officia ducimus!</p>
+                    </div>
+                    <div class="projects__container__apresentation__project">
+                        <h3 class="projects__container__apresentation__project__title">PROJETO</h3>
+                        <a href="#"><img src="https://via.placeholder.com/200x200" alt=""></a>
+                        <p class="projects__container__apresentation__project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas voluptatibus consequatur accusamus nam, explicabo dolor, quo iure incidunt ex fugiat perferendis enim id, recusandae repellendus consectetur. Iste, sunt excepturi.</p>
+                    </div>
+                    <div class="projects__container__apresentation__project">
+                        <h3 class="projects__container__apresentation__project__title">PROJETO</h3>
+                        <a href="#"><img src="https://via.placeholder.com/200x200" alt=""></a>
+                        <p class="projects__container__apresentation__project__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rem reiciendis, dignissimos laboriosam quaerat eum similique illo soluta iusto sed omnis odio facilis delectus. Illum tempora quam dignissimos sed odit?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about no padrão BEM -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__container">
+                <div class="about__container__text">
+                    <h2 class="about__container__text__title">Sobre mim</h2>
+                    <p class="about__container__text__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi qui dolore quia, alias obcaecati sit minima corporis aperiam aut doloribus possimus voluptates nobis. Voluptates commodi a ipsum delectus reiciendis sint.</p>
+                </div>
+                <div class="about__container__languages">
+                    <ul class="about__container__languages__list">
+                        <li class="about__container__languages__list__item">
+                            <h5 class="about__container__languages__list__item__title">HTML | CSS | Sass</h5>
+                            <span class="back-line">
+                                <span class="front-line__frontDevelopment"></span>
+                            </span>
+                        </li>
+                        <li class="about__container__languages__list__item">
+                            <h5 class="about__container__languages__list__item__title">JavaScript</h5>
+                            <span class="back-line">
+                                <span class="front-line__frontPrograming"></span>
+                            </span>
+                        </li>
+                        <li class="about__container__languages__list__item">
+                            <h5 class="about__container__languages__list__item__title">SQL | mySQL | Oracle</h5>
+                            <span class="back-line">
+                                <span class="front-line__dataBank"></span>
+                            </span>
+                        </li>
+                        <li class="about__container__languages__list__item">
+                            <h5 class="about__container__languages__list__item__title">Java</h5>
+                            <span class="back-line">
+                                <span class="front-line__backEnd"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__container__contact">
+                    <ul class="about__container__contact__list">
+                        <li class="about__container__contact__list__item"><a href="https://github.com/Brunoopdev"><img class="about__container__contact__list__item__icon" src="/images/github USE.png" alt="github icon"></a></li>
+                        <li class="about__container__contact__list__item"><a href="https://linkedin.com/in/bruno-paes-dev/"><img class="about__container__contact__list__item__icon" src="/images/linkedin USE.png" alt="linkedin icon"></a></li>
+                        <li class="about__container__contact__list__item"><a href="mailto:brunoopdev@gmail.com"><img class="about__container__contact__list__item__icon" src="/images/main USE.png" alt="mail icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer no padrão BEM -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__container">
+                &copy;desenvolvido por Bruno
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/scripts/main.js"></script>
+</body>
+</html>

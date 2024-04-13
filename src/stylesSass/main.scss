@@ -1,0 +1,35 @@
+@use 'header';
+@use 'home';
+@use 'projects';
+@use 'about';
+@use 'footer';
+@use 'modifiers';
+@use 'variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(/images/desktop.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+
+    @media (max-width:480px){
+        background-image: url('/images/mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+

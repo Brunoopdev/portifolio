@@ -1,0 +1,16 @@
+{
+  "name": "portifolio-css-new-branch",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/index.html src/stylesSass/main.scss src/scripts/main.js",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "sass": "^1.75.0"
+  }
+}

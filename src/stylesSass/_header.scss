@@ -1,0 +1,72 @@
+@use 'variables';
+
+.header{
+    padding: 38px;
+    position: sticky;
+    top: 0;
+    transition: ease .1s;
+
+    &__nav{
+        text-align: center;
+        width: 500px;
+        margin: 0 auto;
+
+        &__list{
+            display: flex;
+            justify-content:space-around;
+            list-style: none;
+
+            .liMiddle{
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+
+            .li{
+                text-decoration: none;
+                color: variables.$textColor;
+                font-weight: bold;
+            }
+
+            &__item{
+                padding: 4px 12px;
+                border-radius: 6px;
+                font-size: 26px;
+            }
+        }
+    }
+
+    @media (max-width:480px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: sticky;
+        top: 0;
+
+        &__nav{
+            text-align: center;
+            width: 250px;
+            margin: 0 auto;
+
+            &__list{
+                display: flex;
+                justify-content:space-around;
+                list-style: none;
+
+                .liMiddle{
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+
+                .li{
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+                &__item{
+                    padding: 4px 12px;
+                    border-radius: 6px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

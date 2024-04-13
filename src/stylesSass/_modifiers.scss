@@ -1,0 +1,12 @@
+@use 'variables';
+
+.header{
+    &--active{
+        background-color: variables.$secondaryColor;
+        z-index: 1;
+    }
+
+    &__nav__list__item--active{
+        background-color: variables.$textColor;
+    }
+}
